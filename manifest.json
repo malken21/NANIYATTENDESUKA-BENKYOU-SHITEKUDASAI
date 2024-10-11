@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "NANIYATTENDESUKA-BENKYOU-SHITEKUDASAI",
+    "version": "1.0",
+    "description": " YouTubeの おすすめ欄が すべて \"勉強してください\" になる Chrome拡張機能",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "replace.js"
+            ]
+        }
+    ]
+}
