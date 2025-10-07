@@ -11,7 +11,7 @@ const replaceRecommendations = () => {
     targetVideos.forEach(video => {
         const thumbnail = video.querySelector('a#thumbnail');
         if (thumbnail)
-            thumbnail.querySelector('img').src = 'https://img.youtube.com/vi/' + targetVideoId + '/hqdefault.jpg'; // サムネイル画像を変更
+            thumbnail.querySelector('img').src = 'https://img.youtube.com/vi/' + afterVideoId + '/hqdefault.jpg'; // サムネイル画像を変更
 
         const title = video.querySelector('yt-formatted-string#video-title');
         if (title)
@@ -20,4 +20,4 @@ const replaceRecommendations = () => {
     });
 };
 
-setInterval(replaceRecommendations, 10); // 10ms ごとに実行
+setInterval(replaceRecommendations, 1000); // 1s ごとに実行
